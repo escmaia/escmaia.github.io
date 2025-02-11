@@ -6,8 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ["roboto", "serif"],
-        skranji: ["Skranji", "serif"],
+        macondo: ["Macondo", "serif"],
       },
 
       colors: {
@@ -15,5 +14,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animated")],
 };
