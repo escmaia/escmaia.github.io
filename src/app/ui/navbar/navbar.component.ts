@@ -15,4 +15,8 @@ export class NavbarComponent {
   goTo(route: string) {
     this.router.navigate([route]);
   }
+
+  openInstagram(): void {
+    window.open('https://www.instagram.com/escmaia/', '_blank');
+  }
 }
