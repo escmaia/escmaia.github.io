@@ -1,0 +1,48 @@
+<!-- Botão de Menu -->
+<button
+  class="z-50 p-2 text-gray-900 rounded-full transition-transform duration-300"
+  (click)="toggleMenu()"
+>
+  <svg
+    class="w-6 h-6 transition-transform duration-300 rotate-0"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M4 6h16M4 12h16m-7 6h7"
+    />
+  </svg>
+</button>
+
+<!-- Overlay do Menu -->
+@if (isOpen()) {
+<div
+  class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center transition-opacity duration-300"
+>
+  <ul class="text-white text-center text-2xl space-y-6 cursor-pointer">
+    <li>
+      <a class="hover:font-bold hover:text-3xl" (click)="goTo('')">Início</a>
+    </li>
+    <li>
+      <a class="hover:font-bold hover:text-3xl" (click)="goTo('terracota')"
+        >Terracota</a
+      >
+    </li>
+    <li>
+      <a class="hover:font-bold hover:text-3xl" (click)="goTo('biografia')"
+        >Biografia</a
+      >
+    </li>
+    <li>
+      <a class="hover:font-bold hover:text-3xl" (click)="goTo('depoimentos')"
+        >Depoimentos</a
+      >
+    </li>
+  </ul>
+</div>
+}

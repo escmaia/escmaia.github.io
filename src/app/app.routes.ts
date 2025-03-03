@@ -1,7 +1,9 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { TerracotaComponent } from './pages/terracota/terracota.component';
-import { BiographyComponent } from './pages/biography/biography.component';
+import { BiographyComponent } from './portifolio/biography/biography.component';
+import { HomeComponent } from './portifolio/home/home.component';
+import { PortifolioComponent } from './portifolio/portifolio.component';
+import { TerracotaComponent } from './portifolio/terracota/terracota.component';
+import { TestimonialComponent } from './portifolio/testimonial/testimonial.component';
 
 export const routes: Routes = [
   {
@@ -10,15 +12,25 @@ export const routes: Routes = [
     redirectTo: 'home',
   },
   {
-    path: 'home',
-    component: HomeComponent,
-  },
-  {
-    path: 'terracota',
-    component: TerracotaComponent,
-  },
-  {
-    path: 'biography',
-    component: BiographyComponent,
+    path: '',
+    component: PortifolioComponent,
+    children: [
+      {
+        path: '',
+        component: HomeComponent,
+      },
+      {
+        path: 'terracota',
+        component: TerracotaComponent,
+      },
+      {
+        path: 'biografia',
+        component: BiographyComponent,
+      },
+      {
+        path: 'depoimentos',
+        component: TestimonialComponent,
+      },
+    ],
   },
 ];

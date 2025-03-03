@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        macondo: ["Macondo", "serif"],
+        alata: ["Alata", "serif"],
       },
 
       colors: {
