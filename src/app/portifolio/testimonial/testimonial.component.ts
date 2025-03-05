@@ -15,9 +15,19 @@ export class TestimonialComponent {
       title: 'Vasco Prado',
     },
     {
+      src: './image/depoimentos/armindo-trevisam.jfif',
+      text: 'Suas terracotas recordam o gesto primordial da criação quando a água e o espírito se associaram ao pó, dando-lhes a vida',
+      title: 'Armindo Trevisam',
+    },
+    {
       src: './image/depoimentos/josue-guimaraes.jfif',
-      text: 'Suas te rracotas recordam o gesto primordial da criação quando a água e o espírito se associaram ao pó, dando-lhes a vida". Armindo Trevisam "Um trabalho humilde e duro, incansável, buscando descobrir nas pessoas alguma coisa que os outros não enxergam".',
+      text: 'Um trabalho humilde e duro, incansável, buscando descobrir nas pessoas alguma coisa que os outros não enxergam',
       title: 'Josué Guimarães',
+    },
+    {
+      src: './image/depoimentos/maria-amelia-bulhoes.jfif',
+      text: 'Nilton Maia transforma matéria inerte em figuras cheias de vida, capturando a essência do cotidiano com sensibilidade. Suas esculturas revelam a beleza do simples, convidando-nos a enxergar além do óbvio.',
+      title: 'Maria Amélia Bulhões',
     },
     {
       src: './image/depoimentos/luiz-fernando-verissimo.jfif',
@@ -28,11 +38,6 @@ export class TestimonialComponent {
       src: './image/depoimentos/moacyr-scliar.jfif',
       text: 'Como em Di Cavalcanti, temos aqui uma arte essencialmente brasileira, o que o torna mais próximo de nossos sentimentos e emoções.',
       title: 'Moacir Scliar',
-    },
-    {
-      src: './image/depoimentos/maria-amelia-bulhoes.jfif',
-      text: 'Nilton Maia transforma matéria inerte em figuras cheias de vida, capturando a essência do cotidiano com sensibilidade. Suas esculturas revelam a beleza do simples, convidando-nos a enxergar além do óbvio.',
-      title: 'Maria Amélia Bulhões',
     },
   ];
 }

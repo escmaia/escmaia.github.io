@@ -1,10 +1,10 @@
 <main
-  class="pt-20 px-5 container w-screen h-full items-center grid justify-items-center gap-3"
+  class="px-5 container w-screen h-full items-center grid md:grid-cols-2 justify-items-center"
 >
   @for (item of data; track $index) {
   <section class="flex my-5 max-w-lg">
     <img
-      class="rounded-full -mt-4 min-w-20 min-h-20 max-w-20 max-h-20 object-cover justify-self-center"
+      class="rounded-full min-w-20 min-h-20 max-w-20 max-h-20 object-cover justify-self-center"
       [src]="item.src"
     />
 
