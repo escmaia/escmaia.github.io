@@ -1,0 +1,26 @@
+<main class="w-full h-screen bg-gray-200">
+  <h1
+    class="fixed top-16 mt-5 px-4 right-0 text-gray-900 bg-white bg-opacity-55 font-thin text-xl p-2"
+  >
+    Esculturas em Pedras
+  </h1>
+
+  <section
+    class="grid grid-rows-2 grid-cols-2 md:grid-rows-3 md:grid-cols-3 gap-1 rounded"
+  >
+    @for (item of images; track $index) { @defer {
+    <img
+      class="grid row-span-1 col-span-1 rounded object-cover w-full h-full transition-opacity duration-300"
+      src="./image/pedras/{{ item }}"
+      loading="lazy"
+      (load)="onImageLoad($event)"
+      [class.opacity-0]="!imageLoaded[$index]"
+      [class.opacity-100]="imageLoaded[$index]"
+    />
+
+    }@placeholder {
+    <div class="bg-gray-300 rounded animate-pulse h-full w-full"></div>
+
+    }}
+  </section>
+</main>

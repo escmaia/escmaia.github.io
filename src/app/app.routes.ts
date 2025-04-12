@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { BiographyComponent } from './portifolio/biography/biography.component';
 import { HomeComponent } from './portifolio/home/home.component';
+import { PedrasComponent } from './portifolio/pedras/pedras.component';
 import { PortifolioComponent } from './portifolio/portifolio.component';
 import { TerracotaComponent } from './portifolio/terracota/terracota.component';
 import { TestimonialComponent } from './portifolio/testimonial/testimonial.component';
@@ -22,6 +23,10 @@ export const routes: Routes = [
       {
         path: 'terracota',
         component: TerracotaComponent,
+      },
+      {
+        path: 'pedras',
+        component: PedrasComponent,
       },
       {
         path: 'biografia',
