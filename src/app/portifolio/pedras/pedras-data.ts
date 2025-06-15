@@ -1,4 +1,6 @@
 export const PEDRAS = [
+  'sol-do-louvre.jpg',
+  'sol-do-louvre2.jpg',
   'sol-da-boca-do-monte.jpeg',
   'sol-da-lagoa.jpeg',
   '20211213_090102633.jpg',
