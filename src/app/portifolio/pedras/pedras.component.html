@@ -7,16 +7,13 @@
 
   @defer{
   <section
-    class="grid grid-rows-2 grid-cols-2 md:grid-rows-3 md:grid-cols-3 gap-1 rounded w-full h-full"
+    class="grid grid-cols-2 md:grid-cols-3 gap-1 rounded w-full h-full"
   >
     @for (item of images; track $index) {
     <img
       class="grid row-span-1 col-span-1 rounded object-cover w-full h-full transition-opacity duration-300"
       src="./image/pedras/{{ item }}"
       loading="lazy"
-      (load)="onImageLoad($event)"
-      [class.opacity-0]="!imageLoaded[$index]"
-      [class.opacity-100]="imageLoaded[$index]"
     />
 
     }

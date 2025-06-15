@@ -13,10 +13,10 @@ export class PedrasComponent {
   images = PEDRAS;
   imageLoaded: boolean[] = [];
 
-  onImageLoad(event: Event) {
-    const index = this.images.indexOf(
-      (event.target as HTMLImageElement).src.split('/').pop() || ''
-    );
-    this.imageLoaded[index] = true;
-  }
+  // onImageLoad(event: Event) {
+  //   const index = this.images.indexOf(
+  //     (event.target as HTMLImageElement).src.split('/').pop() || ''
+  //   );
+  //   this.imageLoaded[index] = true;
+  // }
 }
